@@ -1,3 +1,3 @@
 My Portfolio Site
-Visit at: https://skarthik7.github.io
+Visit at: http://karthik.codes
 ..
