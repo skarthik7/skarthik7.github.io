@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/color.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
   <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 <body>
 
@@ -526,14 +527,14 @@
         <div class="col-md-7 col-lg-5">
           <div class="contacts__form">
             <p class="contacts__form-title">Or just write me a letter here_</p>
-            <form class="js-form">
+            <form action="https://send.pageclip.co/niMhAHIpwD7WaRWvW7KYOPOjsTnnwDq6/contact-form-2511" class="pageclip-form">
               <div class="form-group">
-                <input class="form-field js-field-name" type="text" placeholder="Your name" required>
+                <input class="form-field js-field-name" name="name" type="text" placeholder="Your name" required>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <input class="form-field js-field-email" type="email"  placeholder="Your e-mail" required>
+                <input class="form-field js-field-email" name="email" type="email"  placeholder="Your e-mail" required>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
@@ -542,7 +543,10 @@
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
-              <button class="site-btn site-btn--form" type="submit" value="Send">Send</button>
+              <button type="submit" class="pageclip-form__submit">
+                <span>Send</span>
+              </button>
+              <!-- <button class="site-btn site-btn--form" type="submit" >Send</button> -->
             </form>
           </div>
           
@@ -603,6 +607,7 @@ Portfolio Modal -->
   <script src="assets/js/mbclicker.min.js"></script>
   <script src="assets/js/site-btn.js"></script>
   <script src="assets/js/style-switcher.js"></script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>
 
