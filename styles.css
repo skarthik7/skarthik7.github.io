@@ -3,11 +3,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #0074d9; /* Same as header background */
+  background: #0074d9; 
   color: #fff;
   padding: 10px 0;
-  z-index: 1000; /* Ensure it stays above other content */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for better visibility */
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar a {
@@ -28,17 +28,17 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all text by default */
+    text-align: center;
   }
   
   .container {
     max-width: 80%;
     margin: auto;
-    text-align: center; /* Center content within the container */
+    text-align: center;
   }
   
   .header {
-    margin-top: 50px; /* Push the rest of the header content below the navbar */
+    margin-top: 50px;
     background: #0074d9;
     color: #fff;
     padding: 40px 0;
@@ -84,12 +84,12 @@ body {
   }
   
   .contact form input, .contact form textarea {
-    width: 60%; /* Centered and narrower input fields */
+    width: 60%;
     padding: 10px;
     margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: block; /* Ensure inputs stack */
+    display: block;
   }
   
   .contact form button {
@@ -128,7 +128,7 @@ body {
 
 .about-left {
   margin-right: 5%;
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 
@@ -155,7 +155,7 @@ body {
 }
 
 .social-links a {
-  color: white; /* Change text color to white */
+  color: white;
   margin: 0 10px;
   text-decoration: none;
   font-size: 1em;
@@ -194,14 +194,14 @@ body {
 }
 
 .project-image {
-  width: 235px; /* Set a fixed width for the project image */
-  height: 400px; /* Set a fixed height for the project image */
-  object-fit: cover; /* Ensure the image covers the container without stretching */
+  width: 235px; 
+  height: 400px; 
+  object-fit: cover;
   border-radius: 5px;
 }
 .project-image-2 {
-  width: 280px; /* Set a fixed width for the project image */
-  height: 235px; /* Set a fixed height for the project image */
+  width: 280px;
+  height: 235px;
   object-fit: cover; /* Ensure the image covers the container without stretching */
   border-radius: 5px;
 }
@@ -230,13 +230,13 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the content within the header */
+  justify-content: center; 
 }
 
 .header-profile-pic {
-  width: 200px; /* Set the desired width */
-  height: 296px; /* Set the desired height */
-  margin-right: 20px; /* Add some space to the right of the image */
+  width: 200px; 
+  height: 296px; 
+  margin-right: 20px; 
   border-radius: 27px;
 }
 
