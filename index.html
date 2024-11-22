@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thickey's portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <a href="#about">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-container">
+          <img src="pic.png" alt="Your Profile Picture" class="header-profile-pic">
+          <div class="header-content">
+            <h1>Sriram Karthik Akella</h1>
+            <p>Computer Science Student<br>Canada</p>
+            <div class="social-links">
+              <a href="https://github.com/skarthik7" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/sriram-karthik-akella-99b165116/" target="_blank">LinkedIn</a>
+              <a href="https://leetcode.com/skarthik7" target="_blank">LeetCode</a>
+            </div>
+            <a href="resume.pdf" target="_blank" class="resume-button" download>Download Resume</a>
+          </div>
+        </div>
+    </header>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-left">
+      <h2>About Me</h2>
+      
+      <p>Hey there! 👋 I'm a fourth-year Computing Science major at the University of Alberta, set to graduate in April 2025. 💻 My journey into the world of computers started at a young age, sparked by a fascination with both software and hardware. This early curiosity 🔍 evolved into a deep passion for technology, which led me to pursue a degree in Computing Science.
+        <p>
+        I’ve gained valuable experience through two SWE internships 💼.
+        <p>
+        As I approach my graduation in April 2025, I’m seeking full-time opportunities in Software Engineering or related roles where I can apply my skills to build scalable, efficient solutions. I’m eager to contribute to impactful projects, grow as an engineer, and collaborate with talented teams</p>
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <div class="experience-header">
+            <img src="ua_logo.png" alt="University of Alberta Logo" class="company-logo">
+            <div class="experience-details">
+              <strong>University of Alberta</strong> - <span>Sept 2020 - Apr 2025</span><p>
+              
+                <b>🎓 BS in Computer Science</b><br>
+                🧑‍🏫 Teaching Assistant (4x)<br>
+                👥 VP @ UACS (Undergraduate Association for CS)<br>
+                📚 Member of the Google DSC<br>
+                
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="about-right">
+      <h3>Experience</h3>
+      <ul>
+        <li>
+          <div class="experience-header">
+            <img src="ericcson_logo.png" alt="Ericsson Logo" class="company-logo">
+            <div class="experience-details">
+              <strong>Ericsson</strong> - <span>Sept 2023 - Apr 2024</span>
+              <p>🚀 Python & Data: Extracted/processed data from 500+ radio towers, boosting analysis efficiency. Optimized PostgreSQL queries (+47% performance). <br>
+                💻 Full-Stack Dev: Built a React.js, Node.js, MongoDB app, improving workflows & task completion (+28%). <br>
+                🤖 Machine Learning: Deployed ML models with Python, Flask, Docker for real-time business predictions.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-header">
+            <img src="coe_logo.png" alt="City of Edmonton Logo" class="company-logo">
+            <div class="experience-details">
+              <strong>City of Edmonton</strong> - <span>Jan 2023 - Aug 2023</span>
+              <p>💻 Python Tool: Developed a network data processing tool, boosting accuracy by 80%. <br>
+                ⚙️ Automation: Designed and implemented 10+ scripts, reducing manual networking tasks by 40%. <br>
+                📊 Data Optimization: Refined processes for handling network configuration files, achieving a 35% efficiency increase.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-header">
+            <img src="koc_logo.png" alt="Kuwait Oil Company Logo" class="company-logo">
+            <div class="experience-details">
+              <strong>Kuwait Oil Company</strong> - <span>May 2019 - July 2019</span>
+              <p>• Created interactive dashboards using Tableau that improved decision-making speed by 35% for the management.<br>
+                • Implemented data cleaning and preprocessing workflows that improved data quality accuracy from 78% to 94%.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container">
+    <h2>Projects</h2>
+   
+    <div class="projects">
+      <div class="project">
+        <img src="qify_proj.png" alt="Project 1" class="project-image">
+        <div class="project-details">
+          <h3>Qify</h3>
+          <p>Developed a mobile application (using Flutter & Firebase) to ease the queuing system at hospitals.<br>
+              Includes appointment (scheduling, rescheduling, deleting) and video call features.<br>
+              This application was developed as part of Kuwait Foundation of Advanced Sciences (KFAS)'s Virtual Hackathon.<br>
+              As Team MacBytes, we stood in the top 5 teams (out of 40+ who were selected to participate) to the final round.
+          </p>
+          <a href="https://github.com/skarthik7/Qify#-qify-" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="covid_proj.jpeg" alt="Project 2" class="project-image-2">
+        <div class="project-details">
+          <h3>COVID Tracker</h3>
+          <p>Python program that tracks COVID cases.<br>
+            Uses an open source API: covid19api.com.</p>
+          <a href="https://github.com/skarthik7/COVID-Tracker#covid-tracker" target="_blank">View Project</a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>copyright © thickey 2024 ❤️</p>
+</footer>
+</body>
+</html>

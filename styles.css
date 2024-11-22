@@ -1,0 +1,245 @@
+/* styles.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0074d9; /* Same as header background */
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for better visibility */
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text by default */
+  }
+  
+  .container {
+    max-width: 80%;
+    margin: auto;
+    text-align: center; /* Center content within the container */
+  }
+  
+  .header {
+    margin-top: 50px; /* Push the rest of the header content below the navbar */
+    background: #0074d9;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+  }
+  
+  .header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  .about, .projects, .contact {
+    padding: 40px 20px;
+  }
+  
+  
+
+  
+  h2 {
+    color: #0070d9;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  
+  .contact form input, .contact form textarea {
+    width: 60%; /* Centered and narrower input fields */
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensure inputs stack */
+  }
+  
+  .contact form button {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+  }
+  
+  .contact form button:hover {
+    background: #0056a3;
+  }
+  
+  .footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+
+
+.about-left, .about-right {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.about-left {
+  margin-right: 5%;
+  text-align: center; /* Center align the content */
+}
+
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.about-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-right li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white; /* Change text color to white */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1770be;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 14px;
+}
+
+.resume-button:hover {
+  background-color: #0056a3;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-image {
+  width: 235px; /* Set a fixed width for the project image */
+  height: 400px; /* Set a fixed height for the project image */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+  border-radius: 5px;
+}
+.project-image-2 {
+  width: 280px; /* Set a fixed width for the project image */
+  height: 235px; /* Set a fixed height for the project image */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+  border-radius: 5px;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-details h4 {
+  margin: 0;
+}
+
+.project-details p {
+  margin: 5px 0;
+}
+
+.project-details a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content within the header */
+}
+
+.header-profile-pic {
+  width: 200px; /* Set the desired width */
+  height: 296px; /* Set the desired height */
+  margin-right: 20px; /* Add some space to the right of the image */
+  border-radius: 27px;
+}
+
+.header-content {
+  text-align: left;
+}
