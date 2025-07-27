@@ -1,140 +1,488 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>thickey's portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sriram Karthik Akella</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.modal.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swipper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .dark-btn-stored {
+            position: fixed !important;
+            top: 20px !important;
+            right: 20px !important;
+            z-index: 1000 !important;
+        }
+        
+        /* Add these new styles */
+        .bostami-header-area {
+            margin-bottom: 0 !important; /* Reduce header bottom margin */
+        }
+        
+        .page-wrapper {
+            padding-top: 70px !important; /* Reduce top padding of main wrapper */
+        }
+        
+        .section-wrapper {
+            padding-top: 30px !important; /* Reduce section padding */
+        }
+        
+        #preloader {
+            height: auto !important; /* Adjust preloader height */
+        }
+        
+        .card-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .card-list li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+        }
+    </style>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-          <a href="#about">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="header-container">
-          <img src="pic.png" alt="Your Profile Picture" class="header-profile-pic">
-          <div class="header-content">
-            <h1>Sriram Karthik Akella</h1>
-            <p>Computer Science Student<br>Canada</p>
-            <div class="social-links">
-              <a href="https://github.com/skarthik7" target="_blank">GitHub</a>
-              <a href="https://www.linkedin.com/in/sriram-karthik-akella-99b165116/" target="_blank">LinkedIn</a>
-              <a href="https://leetcode.com/skarthik7" target="_blank">LeetCode</a>
-            </div>
-            <a href="Resume.pdf" target="_blank" class="resume-button" download>Download Resume</a>
-          </div>
-        </div>
-    </header>
 
-<section id="about" class="about">
-  <div class="container">
-    <div class="about-left">
-      <h2>About Me</h2>
-      
-      <p>Hey there! 👋 I'm a fourth-year Computing Science major at the University of Alberta, set to graduate in April 2025. 💻 My journey into the world of computers started at a young age, sparked by a fascination with both software and hardware. This early curiosity 🔍 evolved into a deep passion for technology, which led me to pursue a degree in Computing Science.
-        <p>
-        I’ve gained valuable experience through two SWE internships 💼.
-        <p>
-        As I approach my graduation in April 2025, I’m seeking full-time opportunities in Software Engineering or related roles where I can apply my skills to build scalable, efficient solutions. I’m eager to contribute to impactful projects, grow as an engineer, and collaborate with talented teams</p>
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <div class="experience-header">
-            <img src="ua_logo.png" alt="University of Alberta Logo" class="company-logo">
-            <div class="experience-details">
-              <strong>University of Alberta</strong> - <span><i>Sept 2020 - Apr 2025</i></span><p>
-              
-                <b>🎓 BS in Computer Science</b><br>
-                🧑‍🏫 Teaching Assistant (4x)<br>
-                👥 VP @ UACS (Undergraduate Association for CS)<br>
-                📚 Member of the Google DSC<br>
+    <div class="page-wrapper home-1" data-background="assets/img/bg/page-bg-1.jpg">
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="loader_line"></div>
+        </div>
+        <!-- /PRELOADER -->
+
+        <!-- header-start -->
+        <div class="bostami-header-area mb-30 z-index-5">
+            <div class="container">
+                <div class="bostami-header-wrap">
+                    <div class="row align-items-center justify-content-end">  <!-- Added justify-content-end -->
+                        <div class="col-6">
+                            <div class="bostami-header-menu-btn text-right">
+                                <div class="dark-btn dark-btn-stored dark-btn-icon position-fixed">  <!-- Added position-fixed class -->
+                                    <i class="fa-light fa-moon"></i>
+                                    <i class="fa-light fa-sun"></i>
+                                </div>
+                                <div class="menu-btn toggle_menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- mobile menu -->
+                <div class="mobile-menu-wrap">
+                    <div class="mobile-menu mobile_menu">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- header-end -->
+
+        <div class="container z-index-3">
+            <div class="row">
+
+                <!-- parsonal-info-start -->
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="bostami-parsonal-info-area">
+                        <div class="bostami-parsonal-info-wrap">
+
+                            <!-- img -->
+                            <div class="bostami-parsonal-info-img">
+                                <img src="assets/img/karthik.jpg" alt="avatar">
+                            </div>
+
+                            <!-- name -->
+                            <h4 class="bostami-parsonal-info-name">
+                                <a href="#">Sriram Karthik Akella</a>
+                            </h4>
+                            <span class="bostami-parsonal-info-bio mb-15">Software Engineer</span>
+
+                            <!-- socail link -->
+                            <ul class="bostami-parsonal-info-social-link mb-30">
+                                <li>
+                                    <a href="https://github.com/skarthik7" class="github">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sriram-karthik-a-99b165116/" class="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- contact -->
+                            <div class="bostami-parsonal-info-contact mb-30">
+                                <div class="bostami-parsonal-info-contact-item phone">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Phone</span>
+                                        <p>+1 (825) 461 4747</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="bostami-parsonal-info-contact-item email">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Email</span>
+                                        <p>skakellaswe@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="bostami-parsonal-info-contact-item location">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Location</span>
+                                        <p>Canada</p>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="bostami-parsonal-info-contact-item calendar">
+                                    <div class="icon">
+                                        <i class="fa-light fa-calendar-days"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Birthday</span>
+                                        <p>May 27, 1990</p>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!-- cv button -->
+                            <div class="bostami-parsonal-info-btn">
+                                <a class="btn-1" href="assets/Resume.pdf" target="_blank">
+                                    <span class="icon">
+                                        <i class="fa-regular fa-download"></i>
+                                    </span>
+                                    download cv
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- personal-info-end -->
+
+                <!-- about-page-start -->
+                <div class="col-xxl-8 col-xl-9">
+                    <div class="bostami-page-content-wrap">
+
+                        <!-- page title -->
+                        <div id="about" class="section-wrapper pl-60 pr-60 pt-60">
+                            <div class="bostami-page-title-wrap mb-35">
+                                <h2 class="page-title">about</h2>
+                                <p>Hey there, thanks for viewing my portfolio! ☺️ </p><p>Ever since I was a child, I’ve been fascinated by how computers work. 
+                                    That curiosity guided me to pursue a degree in Computer Science at the University of Alberta. 
+                                    </p>
+                                <p>Along the way, I completed two SWE internships, worked twice as a teaching assistant, and currently work as a Research Programmer. Now, as a new grad, I'm looking forward to starting my career in backend and full-stack development, creating technology that makes a real impact.</p>
+                            </div>
+                        </div>
+
+                        <!-- Resume Section -->
+                        <div id="education" class="section-wrapper pl-60 pr-60 mb-60">
+                            <!-- education -->
+                            <div class="bostami-section-title-wrap mb-20">
+                                <h4 class="section-title"><i class="fa-light fa-school"></i>Education</h4>
+                            </div>
+
+                            <div class="bostami-card-wrap mb-40">
+                                <div class="bostami-card-item bg-prink mb-20">
+                                    <span class="card-subtitle">2020-2025</span>
+                                    <h6 class="card-title">B.Sc. in Computing Science <span>- University of Alberta</span></h6>
+                                    <p class="card-text">Edmonton, AB</p>
+                                </div>
+                            </div>
+
+                            <!-- experience -->
+                            <div class="bostami-section-title-wrap mb-20">
+                                <h4 class="section-title"><i class="fa-light fa-briefcase"></i>Experience</h4>
+                            </div>
+
+                            <div id="experience" class="bostami-card-wrap">
+                                <div class="bostami-card-item bg-catkrill mb-20">
+                                    <span class="card-subtitle">May 2025 - Present</span>
+                                    <h6 class="card-title">Research Programmer</h6>
+                                    <p class="card-text">University of Alberta</p>
+                                    <ul class="card-list">
+                                        <li>• Analyzing 911/811 call data using Python, R, and NLP to uncover mental health trends triggered by climate events.</li>
+                                        <li>• Built keyword extraction tools and models to detect spikes in anxiety-related calls during heatwaves & wildfires.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-prink mb-20">
+                                    <span class="card-subtitle">Sept 2023 - April 2024</span>
+                                    <h6 class="card-title">Software Engineer Intern</h6>
+                                    <p class="card-text">Ericsson</p>
+                                    <ul class="card-list">
+                                        <li>• Wrote a Python script (Pandas + NumPy) that computed z‑scores on network tower log metrics; pushed alerts via FastAPI/Slack webhook, trimming false alarms ~30% and speeding incident response by ~2 hours.</li>
+                                        <li>• Built an internal tool - vacation scheduler using FastAPI (Python) + React which was rolled out to ~1,400 Ericsson North American staff, automating approvals/reminders and eliminating most manual PTO related work.</li>
+                                        <li>• Designed and deployed Python ETL jobs for telemetry from ~500 radio towers, cutting ingestion time from 23 min → 15 min (~35%) through parallelized I/O and incremental loads.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-catkrill mb-20">
+                                    <span class="card-subtitle">Jan 2023 - Aug 2023</span>
+                                    <h6 class="card-title">Software Engineer Intern</h6>
+                                    <p class="card-text">City of Edmonton</p>
+                                    <ul class="card-list">
+                                        <li>• Wrote PowerShell scripts to bulk audit firmware/version compliance on 200+ switches and routers, reducing audit time from ~3 days to ~4 hours bi-weekly.</li>
+                                        <li>• Automated syslog parsing (Python + Pandas) for City of Edmonton’s firewalls and switches, pushing high-severity events to JIRA and reducing detection-to-ticket time from hours to near real time.</li>
+                                        <li>• Built a Flutter app to scan equipment and push records to Firestore/BigQuery via Cloud Functions (Python), replacing forms and cutting down inventory update time.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-prink mb-20">
+                                    <span class="card-subtitle">Jan 2022 - April 2024</span>
+                                    <h6 class="card-title">Teaching Assistant</h6>
+                                    <p class="card-text">Dept. of Computing Science, UAlberta</p>
+                                    <ul class="card-list">
+                                        <li>• Evaluated student assignments and exams for Linux and systems programming courses, ensuring fairness and accuracy.</li>
+                                        <li>• Collaborated with instructors to improve lab materials, enhancing the overall learning experience.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-catkrill">
+                                    <span class="card-subtitle">June 2019 - Aug 2019</span>
+                                    <h6 class="card-title">Data Science Intern</h6>
+                                    <p class="card-text">Kuwait Oil Company</p>
+                                    <ul class="card-list">
+                                        <li>• Data visualization and preprocessing using Tableau and Python.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills Section -->
+                        <div id="skills" class="section-wrapper bg-light-white-2 pt-70 pb-60 pl-60 pr-60">
+                            <div class="row">
+                                <!-- skills -->
+                                <div class="col-12">
+                                    <div class="bostami-section-title-wrap mb-20">
+                                        <h4 class="section-title">Technical Skills</h4>
+                                    </div>
+
+                                    <div class="knowledeges-item-wrap">
+                                        <span class="gk-item">Python</span>
+                                        <span class="gk-item">R</span>
+                                        <span class="gk-item">Java</span>
+                                        <span class="gk-item">SQL</span>
+                                        <span class="gk-item">NumPy</span>
+                                        <span class="gk-item">Pandas</span>
+                                        <span class="gk-item">FastAPI</span>
+                                        <span class="gk-item">Flask</span>
+                                        <span class="gk-item">Postgres</span>
+                                        <span class="gk-item">Redis</span>
+                                        <span class="gk-item">Firebase</span>
+                                        <span class="gk-item">MongoDB</span>
+                                        <span class="gk-item">Git</span>
+                                        <span class="gk-item">Tableau</span>
+                                        <span class="gk-item">MS Office</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <!-- Projects Section -->
+                        <div id="projects" class="section-wrapper pl-60 pr-60 mb-60">
+                            <div class="bostami-section-title-wrap mb-20">
+                                <h4 class="section-title"><i class="fa-light fa-laptop-code"></i>Projects</h4>
+                            </div>
+
+                            <div class="bostami-card-wrap">
+                                
+
+
+
+                                <div class="bostami-card-item bg-catkrill mb-20">
+                                    <span class="card-subtitle">June 2025</span>
+                                    <h6 class="card-title">Info-seek Search Engine</h6>
+                                    <ul class="card-list">
+                                        <li>• Designed and built an end-to-end search engine in Python + Redis; implemented a web crawler (requests/BeautifulSoup) with URL normalization and deduping, stored document metadata in Redis hashes, and created an inverted index using Redis Sets for millisecond-level lookups and retrieval.</li>
+                                        <li>• Returns results with context-aware snippets by extracting and highlighting the exact matching segment from each page's text, so users see why a URL matches their query at a glance.</li>
+                                        <li>• Tech stack: Python (requests, BeautifulSoup, regex), Redis (redis-py)</li>
+                                    </ul>
+                                </div>
+
+                                
+
+                                <div class="bostami-card-item bg-prink mb-20">
+                                    <span class="card-subtitle">July 2020</span>
+                                    <h6 class="card-title">Qify Virtual Clinic</h6>
+                                    <ul class="card-list">
+                                        <li>• Developed a Flutter/Firebase virtual clinic app for KFAS & CODED Hackathon that creates digital queues for doctor consultations, helping reduce hospital visits during COVID-19.</li>
+                                        <li>• Implemented features including doctor/patient registration, appointment scheduling, admin approval system, and integrated Jitsi API for video consultations.</li>
+                                        <li>• Placed in top 7 out of 40 teams, app features automated email reminders and appointment transfer system between doctors.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-catkrill mb-20">
+                                    <span class="card-subtitle">Dec 2017 - Apr 2018</span>
+                                    <h6 class="card-title">Smart Eye</h6>
+                                    <ul class="card-list">
+                                        <li>• Built an assistive device for visually impaired users that detects and recognizes objects in their field of view using Raspberry Pi and ultrasonic sensors.</li>
+                                        <li>• Integrated CloudSight API for object recognition, providing real-time audio feedback about surroundings and obstacles.</li>
+                                        <li>• Combined hardware sensors for distance measurement with cloud API for accurate object identification and user notifications.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-prink mb-20">
+                                    <span class="card-subtitle">Feb 2025</span>
+                                    <h6 class="card-title">AceMe – AI-Powered Study Assistant</h6>
+                                    <ul class="card-list">
+                                        <li>• Developed a cross-platform mobile app using Flutter and Firebase that provides real-time note summarization and auto-generated quizzes through the Gemini API, enhancing study efficiency.</li>
+                                        <li>• Integrated mental health support features including mindfulness exercises and self-care guidance powered by AI, promoting student well-being alongside academic performance.</li>
+                                        <li>• Designed an intuitive user experience for seamless navigation between study tools and wellness resources, driving higher engagement and retention.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Volunteering Section -->
+                        <div id="volunteering" class="section-wrapper pl-60 pr-60 mb-60">
+                            <div class="bostami-section-title-wrap mb-20">
+                                <h4 class="section-title"><i class="fa-light fa-heart"></i>Volunteering</h4>
+                            </div>
+
+                            <div class="bostami-card-wrap">
+                                <div class="bostami-card-item bg-catkrill mb-20">
+                                    <span class="card-subtitle">2021 - 2023</span>
+                                    <h6 class="card-title">Vice President</h6>
+                                    <p class="card-text">Undergraduate Association of Computing Science (UACS), UAlberta</p>
+                                    <ul class="card-list">
+                                        <li>• Organized technical workshops, networking events, and social activities for 500+ CS students.</li>
+                                        <li>• Facilitated industry connections through career fairs and professional development sessions.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bostami-card-item bg-prink mb-20">
+                                    <span class="card-subtitle">2020 - 2024</span>
+                                    <h6 class="card-title">CS Open House Mentor</h6>
+                                    <p class="card-text">University of Alberta</p>
+                                    <ul class="card-list">
+                                        <li>• Mentored high school students exploring computer science through interactive coding sessions.</li>
+                                        <li>• Led programming workshops introducing basic concepts and career opportunities in tech.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- footer copyright -->
+                        <div class="footer-copyright text-center pt-25 pb-25">
+                            <span>© 2024 Sriram Karthik Akella.</span>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+                <!-- about-page-end -->
+
                 
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="about-right">
-      <h3>Experience</h3>
-      <ul>
-        <li>
-          <div class="experience-header">
-            <img src="ericcson_logo.png" alt="Ericsson Logo" class="company-logo">
-            <div class="experience-details">
-              <strong>Ericsson</strong> - <span><i>Sept 2023 - Apr 2024</i></span>
-              
-              <p><b>Software Engineer Intern</b><br>
-                🚀 Python & Data: Extracted/processed data from 500+ radio towers, boosting analysis efficiency. Optimized PostgreSQL queries (+47% performance). <br>
-                💻 Full-Stack Dev: Built a React.js, Node.js, MongoDB app, improving workflows & task completion (+28%). <br>
-                🤖 Machine Learning: Deployed ML models with Python, Flask, Docker for real-time business predictions.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="experience-header">
-            <img src="coe_logo.png" alt="City of Edmonton Logo" class="company-logo">
-            <div class="experience-details">
-              <strong>City of Edmonton</strong> - <span><i>Jan 2023 - Aug 2023</i></span>
-              <p><b>Software Engineer Intern</b><br>
-                💻 Python Tool: Developed a network data processing tool, boosting accuracy by 80%. <br>
-                ⚙️ Automation: Designed and implemented 10+ scripts, reducing manual networking tasks by 40%. <br>
-                📊 Data Optimization: Refined processes for handling network configuration files, achieving a 35% efficiency increase.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="experience-header">
-            <img src="koc_logo.png" alt="Kuwait Oil Company Logo" class="company-logo">
-            <div class="experience-details">
-              <strong>Kuwait Oil Company</strong> - <span><i>May 2019 - July 2019</i></span>
-              
-              <p><b>Data Science Intern</b><br>
-                • Created interactive dashboards using Tableau that improved decision-making speed by 35% for the management.<br>
-                • Implemented data cleaning and preprocessing workflows that improved data quality accuracy from 78% to 94%.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
 
-<section id="projects" class="projects">
-  <div class="container">
-    <h2>Projects</h2>
-   
-    <div class="projects">
-      <div class="project">
-        <img src="qify_proj.png" alt="Project 1" class="project-image">
-        <div class="project-details">
-          <h3>Qify</h3>
-          <p>Developed a mobile application (using Flutter & Firebase) to ease the queuing system at hospitals.<br>
-              Includes appointment (scheduling, rescheduling, deleting) and video call features.<br>
-              This application was developed as part of Kuwait Foundation of Advanced Sciences (KFAS)'s Virtual Hackathon.<br>
-              As Team MacBytes, we stood in the top 5 teams (out of 40+ who were selected to participate) to the final round.
-          </p>
-          <a href="https://github.com/skarthik7/Qify#-qify-" target="_blank">View Project</a>
+                <!-- main-menu-start -->
+                <div class="col-xxl-1 d-xxl-block d-none">
+                    <div class="bostami-main-menu-wrap">
+                        <nav class="bastami-main-menu main_menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="#about">
+                                        <span>
+                                            <i class="fa-light fa-address-card"></i>
+                                        </span>
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#education">
+                                        <span>
+                                            <i class="fa-light fa-school"></i>
+                                        </span>
+                                        Education
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#experience">
+                                        <span>
+                                            <i class="fa-light fa-briefcase"></i>
+                                        </span>
+                                        Experience
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#skills">
+                                        <span>
+                                            <i class="fa-light fa-code"></i>
+                                        </span>
+                                        Skills
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#projects">
+                                        <span>
+                                            <i class="fa-light fa-laptop-code"></i>
+                                        </span>
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#volunteering">
+                                        <span>
+                                            <i class="fa-light fa-heart"></i>
+                                        </span>
+                                        Volunteering
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- main-menu-end -->
+            </div>
         </div>
-      </div>
-      <div class="project">
-        <img src="covid_proj.jpeg" alt="Project 2" class="project-image-2">
-        <div class="project-details">
-          <h3>COVID Tracker</h3>
-          <p>Python program that tracks COVID cases.<br>
-            Uses an open source API: covid19api.com.</p>
-          <a href="https://github.com/skarthik7/COVID-Tracker#covid-tracker" target="_blank">View Project</a>
-        </div>
-      </div>
-     
+
     </div>
-  </div>
-</section>
 
-
-<footer class="footer">
-  <p>copyright © thickey 2024 ❤️</p>
-</footer>
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swipper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.modal.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
